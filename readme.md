@@ -40,7 +40,7 @@ Users: Cette section est réservé seulement aux administrateur. Sur cette page 
 <h2>Test du blog </h2>
 
 
-1) Connectez-vous en cliquant sur le bouton « Connexion» en haut à gauche et en utilisant  comme email: admin@gmail.com' et comme mot de pass:admin'. Cet premier administrateur a été généré dans UserSeeder. Une fois connecté en tant qu’administrateur , vous avez accès à toutes les fonctionnalités du site et vous pouvez voir l’état initial.
+1) Connectez-vous en cliquant sur le bouton « Connexion» en haut à gauche et en utilisant  comme email: admin@gmail.com' et comme mot de <strong>pass:admin'</strong>. Cet premier administrateur a été généré dans UserSeeder. Une fois connecté en tant qu’administrateur , vous avez accès à toutes les fonctionnalités du site et vous pouvez voir l’état initial.
 
 2) Allez dans la section Article ou Admin puis cliquez sur article pour voir son contenue. En bas de la page de chaque article vous avez un bouton gérez commentaire qui peuvent vous permettre de d’autoriser , de bloquer , de modifier ou de supprimer les commentaires de cet article. Si l’article sur lequel vous êtes n’a pas de commentaire , créer en un avec le formulaire en bas de la page. L’autorisation et le blocage d’un commentaire est gérer par une modification du style css. Vous verrez que les commentaires autorisés sont s’affiche maintenant en dessous du contenu de l’article. Vous pouvez retourner les bloquer pour constater leur disparition.
 3)Dans la session Admin , modifiez et supprimez un article .
