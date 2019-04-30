@@ -166,3 +166,9 @@ Le blog utilise un système d’authentification qui distingue trois type d’ut
   <li>Reconnectez vous avec le compte de l'utilisateur que vous avez transformer en administrateur pour constater les changement </li>
 </ol>
 </div>
+<h2> Difficultés </h2>
+<div> La principal difficulté est liée à mon parcours personnel, c'est ma première année en informatique, un domaine que je ne connaisssais pas. J'ai découvert le langage PHP à mi-décembre passé. Il m'a fallu un plus d'éffort  pour y arriver avec Laravel parce que parallèlement , j'avais d'autres technologies et d'autres matières que je découvrais  et que je devrais apprendre vite. Au bout des difficultés il y a la fierté d'avoir découvert le framework Laravel mon premier framework . Je compte bien continuer ce projet et l'améliorer d'avantage pour continuer à apprendre</div>
+
+
+
+
