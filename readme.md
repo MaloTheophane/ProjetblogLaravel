@@ -7,13 +7,14 @@
   <li>Vous devez avoir installé Composer pour faire tourner un projet Laravel</li>
   <li> A l’aide de la commande git clone lienduprojetFourniParGitHub cloner le projet sur votre Machine</li>
    <li>La base de donnée utilisé pour se projet étant Sqlite , vous devez disposer de Sqlite sur votre poste</li>
+   <li>Creer un fichier .env et recopier le contenu correspondant ci-dessous dans le fichier dans .env  faites de même pour le fichier .env.example  </li>
   
   <li>Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : « chemin qui mène vers le répertoireduprojet/database/database.sqlite ». </li>
   
- <li>Sur votre terminal allez à la racine du projet et lancez la commande :  php artisan migrate:fresh --seed. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)</li>
+ <li>Sur votre terminal allez à la racine du projet et lancez la commande :<code> php artisan key:generate</code> pour générer une clé puis la commande <code>  php artisan migrate:fresh --seed</code>. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)</li>
   <li>
  Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur.</li>
-   <li></li>
+  
 
   
 
