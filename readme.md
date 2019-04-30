@@ -9,6 +9,9 @@
 4) Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : « chemin qui mène vers le répertoireduprojet/database/database.sqlite ». 
 5) Sur votre terminal allez à la racine du projet et lancez la commande :  php artisan migrate:fresh --seed. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)
 6)  Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur. 
+ <br>
+ </div>
+ <pre>
 <code>
  APP_NAME=Laravel
 APP_ENV=local
@@ -50,6 +53,8 @@ PUSHER_APP_CLUSTER=mt1
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
  </code>
+ </pre>
+ </div>
 <h2> Interface du blog </h2>I
 Le blog utilise un système d’authentification qui distingue trois type d’utilisateurs. Un utilisateur non connecté ,  un utilisateur  simple connecté et un administrateur. Les possibilités d’interaction avec le blog varient donc en fonction du type d’utilisateur. Dans le menu de la page vous avez 4 section : La section Home, Articles Contact, Admin et Users. 
 
