@@ -12,7 +12,7 @@
  <br>
  </div>
  <pre>
-<code>
+
  APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:CZ44NIMO8ed0hs6yT1M/RAxmEFAcSG5Mak09BAg4NN0=
@@ -52,7 +52,7 @@ PUSHER_APP_CLUSTER=mt1
 
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
- </code>
+
  </pre>
  </div>
 <h2> Interface du blog </h2>I
