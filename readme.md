@@ -13,7 +13,7 @@
   
  <li>Sur votre terminal allez à la racine du projet et lancez la commande :<code> php artisan key:generate</code> pour générer une clé puis la commande <code>  php artisan migrate:fresh --seed</code>. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)</li>
   <li>
- Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur.</li>
+ Faite ensuite la commande la commande :<code> php artisan serve</code> pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur.</li>
   
 
   
