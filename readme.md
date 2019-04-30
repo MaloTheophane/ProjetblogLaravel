@@ -99,6 +99,22 @@ MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
  </pre>
+ <h3> .editor.config </h3>
+ <pre>
+ root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.yml]</pre>
 <h2> Interface du blog </h2>I
 Le blog utilise un système d’authentification qui distingue trois type d’utilisateurs. Un utilisateur non connecté ,  un utilisateur  simple connecté et un administrateur. Les possibilités d’interaction avec le blog varient donc en fonction du type d’utilisateur. Dans le menu de la page vous avez 4 section : La section Home, Articles Contact, Admin et Users. 
 
