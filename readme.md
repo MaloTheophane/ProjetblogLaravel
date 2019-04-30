@@ -11,6 +11,7 @@
 6)  Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur. 
  <br>
  </div>
+  <h3> fichier env.</h3>
  <pre>
 
  APP_NAME=Laravel
@@ -55,6 +56,49 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
  </pre>
  </div>
+ <h3> env.example</h3>
+ <pre>
+ APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+ </pre>
 <h2> Interface du blog </h2>I
 Le blog utilise un système d’authentification qui distingue trois type d’utilisateurs. Un utilisateur non connecté ,  un utilisateur  simple connecté et un administrateur. Les possibilités d’interaction avec le blog varient donc en fonction du type d’utilisateur. Dans le menu de la page vous avez 4 section : La section Home, Articles Contact, Admin et Users. 
 
