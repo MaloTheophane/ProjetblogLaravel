@@ -3,12 +3,29 @@
 <h1>Vous êtes le blog d’un Projet scolaire réalisé par Malo </h1>
 <div>
 <h2>Guide d’installation du projet </h2>
-1) Vous devez avoir installé Composer pour faire tourner un projet Laravel
-2)  A l’aide de la commande git clone lienduprojetFourniParGitHub cloner le projet sur votre Machine
-3) La base de donnée utilisé pour se projet étant Sqlite , vous devez disposer de Sqlite sur votre poste
-4) Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : « chemin qui mène vers le répertoireduprojet/database/database.sqlite ». 
-5) Sur votre terminal allez à la racine du projet et lancez la commande :  php artisan migrate:fresh --seed. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)
-6)  Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur. 
+ <ol>
+  <li>Vous devez avoir installé Composer pour faire tourner un projet Laravel</li>
+  <li> A l’aide de la commande git clone lienduprojetFourniParGitHub cloner le projet sur votre Machine</li>
+   <li>La base de donnée utilisé pour se projet étant Sqlite , vous devez disposer de Sqlite sur votre poste</li>
+  
+  <li>Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : « chemin qui mène vers le répertoireduprojet/database/database.sqlite ». </li>
+  
+ <li>Sur votre terminal allez à la racine du projet et lancez la commande :  php artisan migrate:fresh --seed. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)</li>
+  <li>
+ Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur.</li>
+   <li></li>
+
+  
+
+  
+
+
+  
+ 
+
+
+</ol>
+
  <br>
  </div>
   <h3> fichier env.</h3>
