@@ -9,7 +9,7 @@
 
 <h1>Vous êtes le blog d’un Projet scolaire réalisé par Malo </h1>
 <div>
-Guide d’installation du projet 
+<h2>Guide d’installation du projet </h2>
 1) Vous devez avoir installé Composer pour faire tourner un projet Laravel
 2)  A l’aide de la commande git clone lienduprojetFourniParGitHub cloner le projet sur votre Machine
 3) La base de donnée utilisé pour se projet étant Sqlite , vous devez disposer de Sqlite sur votre poste
@@ -17,40 +17,19 @@ Guide d’installation du projet
 5) Sur votre terminal allez à la racine du projet et lancez la commande :  php artisan migrate:fresh --seed. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)
 6)  Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur. 
 
-Interface du blog 
+<h2> Interface du blog </h2>I
 Le blog utilise un système d’authentification qui distingue trois type d’utilisateurs. Un utilisateur non connecté ,  un utilisateur  simple connecté et un administrateur. Les possibilités d’interaction avec le blog varient donc en fonction du type d’utilisateur. Dans le menu de la page vous avez 4 section : La section Home, Articles Contact, Admin et Users. 
 
 
 
-
-
-
-
-
-Home: Le Home affiche le titre et le contenu des 3 derniers articles publiez sur le blog . La photo du dernier article et un cadre de photo par défaut est affiché en dessous du titre de ce dernier. Tout les types d’utilisateur ont accès au Home.
-Articles: La section article présente tout les articles du blog afficher par ordre de publication. Seul les titres sont affichés. Les titres affichés sont des liens cliquables qui permettent d’accéder au contenu de l’article et de certains détails de l’article comme sa photo , son auteur et sa date de publication .  L’affichage du bas de bas de la liste des articles varie selon le type d’utilisateur. Pour un utilisateur non connecté il y a un bouton ajouter un article en rouge qui n’est pas cliquable. Donc un utilisateur non connecté ne peut pas créer un article. Un utilisateur connecté qu’il soit administrateur où non à deux boutons cliquables le premier pour créer un article et le deuxième pour avoir accès aux boutons CRUD de ses articles . Grâce à ce bouton il peut modifier ou supprimez ses articles. L’utilisateur non connecté n’a aucune possibilité de modifier où supprimer les articles qui ne sont pas sien. 
+<strong>Home:</strong> Le Home affiche le titre et le contenu des 3 derniers articles publiez sur le blog . La photo du dernier article et un cadre de photo par défaut est affiché en dessous du titre de ce dernier. Tout les types d’utilisateur ont accès au Home.
+<strong>Articles: </strong>La section article présente tout les articles du blog afficher par ordre de publication. Seul les titres sont affichés. Les titres affichés sont des liens cliquables qui permettent d’accéder au contenu de l’article et de certains détails de l’article comme sa photo , son auteur et sa date de publication .  L’affichage du bas de bas de la liste des articles varie selon le type d’utilisateur. Pour un utilisateur non connecté il y a un bouton ajouter un article en rouge qui n’est pas cliquable. Donc un utilisateur non connecté ne peut pas créer un article. Un utilisateur connecté qu’il soit administrateur où non à deux boutons cliquables le premier pour créer un article et le deuxième pour avoir accès aux boutons CRUD de ses articles . Grâce à ce bouton il peut modifier ou supprimez ses articles. L’utilisateur non connecté n’a aucune possibilité de modifier où supprimer les articles qui ne sont pas sien. 
 Affichage utilisateur connecté
 
 
+<strong>Contacts:</strong> Tout le monde à accès à cette section  dans laquelle se trouve un formulaire qui permet de prendre contact. En dessous du formulaire se trouve la liste des contacts. En cliquant sur le lien des contacts vous pouvez accéder aux contenu des contacts. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-Affichage utilisateur non connecté: 
-
-
-Contacts: Tout le monde à accès à cette section  dans laquelle se trouve un formulaire qui permet de prendre contact. En dessous du formulaire se trouve la liste des contacts. En cliquant sur le lien des contacts vous pouvez accéder aux contenu des contacts. 
-
-Admin: Cette section est réserve seulement aux administrateur qui peuvent modifier où supprimer tout les articles. 
+<strong>Admin:</strong> Cette section est réserve seulement aux administrateur qui peuvent modifier où supprimer tout les articles. 
 Users: Cette section est réservé seulement aux administrateur. Sur cette page on peut voir la liste de tout les utilisateurs avec leurs rôles et deux boutons supprimer et faire administrer. Le bouton faire administrer. Le rôle des administrateur est en vert tandis-que que celui des utilisateur est en rouge. Quand supprimer est en rouge c’est qu’on ne peut plus supprimer cette utilisateur dont le rôle est administrateur. Un administrateur peut supprimer un utilisateur simple. Tout les administrateurs ont les mêmes droits et il ne peuvent pas se supprimer entre eux. Le bouton Faire Administrer permet de transformer un utilisateur simple en administrateur par un changement de rôle. 
 
 
@@ -58,7 +37,7 @@ Users: Cette section est réservé seulement aux administrateur. Sur cette page 
 
 
 
-Test du blog 
+<h2>Test du blog </h2>
 
 
 1) Connectez-vous en cliquant sur le bouton « Connexion» en haut à gauche et en utilisant  comme email: admin@gmail.com' et comme mot de pass:admin'. Cet premier administrateur a été généré dans UserSeeder. Une fois connecté en tant qu’administrateur , vous avez accès à toutes les fonctionnalités du site et vous pouvez voir l’état initial.
