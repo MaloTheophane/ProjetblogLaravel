@@ -1,6 +1,6 @@
 
 
-<h1>Vous êtes le blog d’un Projet scolaire réalisé par Malo </h1>
+<p>Vous êtes le blog d’un Projet scolaire réalisé par Malo </p>
 <div>
 <h2>Guide d’installation du projet </h2>
  <ol>
@@ -9,7 +9,7 @@
    <li>La base de donnée utilisé pour se projet étant Sqlite , vous devez disposer de Sqlite sur votre poste</li>
    <li>Creer un fichier .env et recopier le contenu correspondant ci-dessous dans le fichier dans .env  faites de même pour le fichier .env.example  </li>
   
-  <li>Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : <code> chemin qui mène vers le répertoireduprojet/database/database.sqlite <code>  . </li>
+  <li>Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : <code> chemin qui mène vers le répertoireduprojet/database/database.sqlite </code>  . </li>
   
  <li>Sur votre terminal allez à la racine du projet et lancez la commande :<code> php artisan key:generate</code> pour générer une clé puis la commande <code>  php artisan migrate:fresh --seed</code>. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)</li>
   <li>
@@ -154,15 +154,16 @@ Users: Cette section est réservé seulement aux administrateur. Sur cette page 
 
 
 <h2>Test du blog </h2>
-
-
-1) Connectez-vous en cliquant sur le bouton « Connexion» en haut à gauche et en utilisant  comme email: admin@gmail.com' et comme mot de <strong>pass:admin'</strong>. Cet premier administrateur a été généré dans UserSeeder. Une fois connecté en tant qu’administrateur , vous avez accès à toutes les fonctionnalités du site et vous pouvez voir l’état initial.
-
-2) Allez dans la section Article ou Admin puis cliquez sur article pour voir son contenue. En bas de la page de chaque article vous avez un bouton gérez commentaire qui peuvent vous permettre de d’autoriser , de bloquer , de modifier ou de supprimer les commentaires de cet article. Si l’article sur lequel vous êtes n’a pas de commentaire , créer en un avec le formulaire en bas de la page. L’autorisation et le blocage d’un commentaire est gérer par une modification du style css. Vous verrez que les commentaires autorisés sont s’affiche maintenant en dessous du contenu de l’article. Vous pouvez retourner les bloquer pour constater leur disparition.
-3)Dans la session Admin , modifiez et supprimez un article .
-
-4) Déconnectez vous et créer deux à trois compte utilisateurs.
-5) Re-explorez les différentes sections en tant qu’utilisateur non administrateur.
-6) Reconnectez-vous en tant qu’administrateur
-7) Allez dans la section User , nommez un des utilisateurs que vous avez créez administrateur avec le bouton FaireAdministrer. Supprimez 
+<ol>
+  <li> Connectez-vous en cliquant sur le bouton « Connexion» en haut à gauche et en utilisant  comme email: admin@gmail.com' et comme mot de <strong>pass:admin'</strong>. Cet premier administrateur a été généré dans UserSeeder. Une fois connecté en tant qu’administrateur , vous avez accès à toutes les fonctionnalités du site et vous pouvez voir l’état initial.</li>
+  <li>Allez dans la section Article ou Admin puis cliquez sur article pour voir son contenue. En bas de la page de chaque article vous avez un bouton gérez commentaire qui peuvent vous permettre de d’autoriser , de bloquer , de modifier ou de supprimer les commentaires de cet article. Si l’article sur lequel vous êtes n’a pas de commentaire , créer en un avec le formulaire en bas de la page. L’autorisation et le blocage d’un commentaire est gérer par une modification du style css. Vous verrez que les commentaires autorisés sont s’affiche maintenant en dessous du contenu de l’article. Vous pouvez retourner les bloquer pour constater leur disparition.</li>
+   <li>
+Dans la session Admin , modifiez et supprimez un article .</li>
+ 
+  <li>Déconnectez vous et créer deux à trois compte utilisateurs.</li>
+    <li> Re-explorez les différentes sections en tant qu’utilisateur non administrateur.</li>
+<li>
+ Reconnectez-vous en tant qu’administrateur</li>
+ <li>Allez dans la section User , nommez un des utilisateurs que vous avez créez administrateur avec le bouton FaireAdministrer. Supprimez </li>
+</ol>
 </div>
