@@ -7,63 +7,67 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+<h1>Vous êtes le blog d’un Projet scolaire réalisé par Malo </h1>
+<div>
+Guide d’installation du projet 
+1) Vous devez avoir installé Composer pour faire tourner un projet Laravel
+2)  A l’aide de la commande git clone lienduprojetFourniParGitHub cloner le projet sur votre Machine
+3) La base de donnée utilisé pour se projet étant Sqlite , vous devez disposer de Sqlite sur votre poste
+4) Ouvrez le fichier .ENV à la racine du projet pour configurer la base de donnée. La configuration consiste à changer dans .ENV , la valeur de la variable DB_DATABASE. Remplacez DB_DATABASE par le : « chemin qui mène vers le répertoireduprojet/database/database.sqlite ». 
+5) Sur votre terminal allez à la racine du projet et lancez la commande :  php artisan migrate:fresh --seed. Cette commande permettra d’initialiser la base de donné en la remplissant avec des données aléatoires ( Des utilisateurs, des posts et des commentaires par posts)
+6)  Faite ensuite la commande la commande : php artisan serve pour démarrer le serveur. Vous devez pouvoir accéder à la page Home du blog en copiant le lien généré par cette commande dans votre navigateur. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Interface du blog 
+Le blog utilise un système d’authentification qui distingue trois type d’utilisateurs. Un utilisateur non connecté ,  un utilisateur  simple connecté et un administrateur. Les possibilités d’interaction avec le blog varient donc en fonction du type d’utilisateur. Dans le menu de la page vous avez 4 section : La section Home, Articles Contact, Admin et Users. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
+Home: Le Home affiche le titre et le contenu des 3 derniers articles publiez sur le blog . La photo du dernier article et un cadre de photo par défaut est affiché en dessous du titre de ce dernier. Tout les types d’utilisateur ont accès au Home.
+Articles: La section article présente tout les articles du blog afficher par ordre de publication. Seul les titres sont affichés. Les titres affichés sont des liens cliquables qui permettent d’accéder au contenu de l’article et de certains détails de l’article comme sa photo , son auteur et sa date de publication .  L’affichage du bas de bas de la liste des articles varie selon le type d’utilisateur. Pour un utilisateur non connecté il y a un bouton ajouter un article en rouge qui n’est pas cliquable. Donc un utilisateur non connecté ne peut pas créer un article. Un utilisateur connecté qu’il soit administrateur où non à deux boutons cliquables le premier pour créer un article et le deuxième pour avoir accès aux boutons CRUD de ses articles . Grâce à ce bouton il peut modifier ou supprimez ses articles. L’utilisateur non connecté n’a aucune possibilité de modifier où supprimer les articles qui ne sont pas sien. 
+Affichage utilisateur connecté
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+
+
+Affichage utilisateur non connecté: 
+
+
+Contacts: Tout le monde à accès à cette section  dans laquelle se trouve un formulaire qui permet de prendre contact. En dessous du formulaire se trouve la liste des contacts. En cliquant sur le lien des contacts vous pouvez accéder aux contenu des contacts. 
+
+Admin: Cette section est réserve seulement aux administrateur qui peuvent modifier où supprimer tout les articles. 
+Users: Cette section est réservé seulement aux administrateur. Sur cette page on peut voir la liste de tout les utilisateurs avec leurs rôles et deux boutons supprimer et faire administrer. Le bouton faire administrer. Le rôle des administrateur est en vert tandis-que que celui des utilisateur est en rouge. Quand supprimer est en rouge c’est qu’on ne peut plus supprimer cette utilisateur dont le rôle est administrateur. Un administrateur peut supprimer un utilisateur simple. Tout les administrateurs ont les mêmes droits et il ne peuvent pas se supprimer entre eux. Le bouton Faire Administrer permet de transformer un utilisateur simple en administrateur par un changement de rôle. 
+
+
+
+
+
+
+Test du blog 
+
+
+1) Connectez-vous en cliquant sur le bouton « Connexion» en haut à gauche et en utilisant  comme email: admin@gmail.com' et comme mot de pass:admin'. Cet premier administrateur a été généré dans UserSeeder. Une fois connecté en tant qu’administrateur , vous avez accès à toutes les fonctionnalités du site et vous pouvez voir l’état initial.
+
+2) Allez dans la section Article ou Admin puis cliquez sur article pour voir son contenue. En bas de la page de chaque article vous avez un bouton gérez commentaire qui peuvent vous permettre de d’autoriser , de bloquer , de modifier ou de supprimer les commentaires de cet article. Si l’article sur lequel vous êtes n’a pas de commentaire , créer en un avec le formulaire en bas de la page. L’autorisation et le blocage d’un commentaire est gérer par une modification du style css. Vous verrez que les commentaires autorisés sont s’affiche maintenant en dessous du contenu de l’article. Vous pouvez retourner les bloquer pour constater leur disparition.
+3)Dans la session Admin , modifiez et supprimez un article .
+
+4) Déconnectez vous et créer deux à trois compte utilisateurs.
+5) Re-explorez les différentes sections en tant qu’utilisateur non administrateur.
+6) Reconnectez-vous en tant qu’administrateur
+7) Allez dans la section User , nommez un des utilisateurs que vous avez créez administrateur avec le bouton FaireAdministrer. Supprimez 
+</div>
